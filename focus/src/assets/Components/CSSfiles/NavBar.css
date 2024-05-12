@@ -1,0 +1,54 @@
+:root {
+  --main-radius: 46px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  z-index: 1;
+  justify-content: center; /* Align items to the center */
+  width: max-content;
+  
+  padding-bottom: 0;
+  padding-left: 0px;
+  background-color: black;
+  border-radius: var(--main-radius);
+  align-items: center;
+  height: 4rem;
+ 
+}
+
+a {
+  color: #FFF;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #FFF;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.17006rem;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin: 0 1rem; /* Add margin to the left and right of each nav item */
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align the logo vertically */
+  position: relative;
+}
+.home{
+  display: flex;
+  margin-left: 109px;
+}
