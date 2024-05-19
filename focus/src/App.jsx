@@ -3,9 +3,10 @@
 import Apresentações from  './assets/pages/Apresentações'
 import Mídias from  './assets/pages/Mídias'
 import Sobre from  './assets/pages/Sobre'
-import Home from  './assets/pages/Home'
+import Home from  './assets/pages/Home/Home.jsx'
 import { Route, Routes } from 'react-router-dom'
-import NavBar from './assets/Components/NavBar'
+import NavBar from './assets/Components/NavBar/NavBar'
+
 
 
 

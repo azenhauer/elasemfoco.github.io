@@ -1,0 +1,87 @@
+:root {
+  --main-radius: 46px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0.28em;
+}
+
+ul {
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  width: 70%;
+  padding-bottom: 0;
+  padding-left: 0px;
+  background-color: black;
+  border-radius: var(--main-radius);
+  align-items: center;
+  height: 4rem;
+}
+
+a {
+  color: #fff;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #fff;
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.17006rem;
+  text-decoration: none;
+  padding-bottom: 0;
+  margin: 0 1rem;
+  position: relative; /* Added for underline animation */
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+}
+
+.home {
+  display: flex;
+  margin-left: 109px;
+}
+
+.shows {
+  margin-right: 5em;
+}
+
+.home {
+  margin-left: 11.8em;
+}
+.logo:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-out;
+}
+nav ul li a{
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-bottom: 2px solid transparent;
+  
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #000000;
+  background-image: radial-gradient(circle 325px at 19.2% 64.8%, rgba(254, 62, 101, 1) 9.7%, rgba(166, 24, 146, 1) 91.3%);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
