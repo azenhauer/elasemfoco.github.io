@@ -1,4 +1,22 @@
 # netlify.toml
+
+# Production context: All deploys from the Production branch set in your site's deploy contexts will inherit these settings.
+[context.production]
+  publish = "build/" # Replace "build/" with your actual build output directory
+
+# Deploy context: All deploys that are not from a preview context defined in deploy-contexts inherit these settings.
+[context.deploy-preview]
+  publish = "build/" # Replace "build/" with your actual build output directory
+
+# Branch Deploy context: All deploys from branches other than the one set for production inherit these settings.
+[context.branch-deploy]
+  publish = "build/" # Replace "build/" with your actual build output directory
+
+# Specific branch context: Deploys from this branch will inherit these settings.
+[context.next]
+  publish = "build/" # Replace "build/" with your actual build output directory
+
+# Always redirect any request to our index.html
 [[redirects]]
   from = "/*"
   to = "/index.html"
