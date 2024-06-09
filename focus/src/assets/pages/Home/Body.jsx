@@ -1,57 +1,47 @@
-import styled from "styled-components";
-
-import ImgHp from "./HomeImages/homepg-img1.jpeg";
-
-import HomeCard from "../../Components/HomeCard.jsx";
-import imgHp2 from "./HomeImages/homepg-img2.jpeg";
-import ImgHp3 from "./HomeImages/homepg-img3.png";
-
-
-const BodyContainer = styled.div`	
+// Body.jsx
+import React from 'react';
+import ImgHp from './HomeImages/homepg-img1.jpeg';
+import HomeCard from '../../Components/HomeCard.jsx';
+import ImgHp2 from './HomeImages/homepg-img2.jpeg';
+import ImgHp3 from './HomeImages/homepg-img3.png';
 
 
-div {
-  
-  height: 705px;
-  display: flex;
-  width: 1700px;
-  
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20em;
-  
-}
-
-`
-
-
-function Body() {
+const Body = () => {
   return (
     
-    <BodyContainer>
+    <div id="homebody-container" className='max-w-full '>
       
+
+
+  
+       
+          <HomeCard 
+            
+            image={ImgHp3}
+            title="As pessoas dançam porque a dança pode mudar coisas,"
+            />
+        
+
+        
+            <HomeCard color={"rgb(12 10 9);"}
+            
+              
+              image={ImgHp2}
+              title="um passo pode mudar pessoas, um movimento pode ter e fazer acreditar que é especial."
+            />
+           
+
+           
+              <HomeCard
+              
+               
+                image={ImgHp}
+                title="Um movimento pode Libertar todas as gerações."
+              />
+           
      
-
-{/* image 1 */}
-<HomeCard image={ImgHp} title="As pessoas dançam porque a dança pode mudar coisas," bgColor="rgba(44, 0, 23, 0.3)" />
-
-   
-    
-{/* image 2 */}
-<HomeCard image={imgHp2} title="um passo pode mudar pessoas, um movimento pode ter e fazer acreditar que é especial." bgColor="rgba(67, 5, 27, 0.3)" />
-
-
-
-{/* image 3 */}
-<HomeCard image={ImgHp3} title="Um movimento pode libertar todas as gerações.”" bgColor="rgba(54, 4, 21, 0.5)"/>
-
-
-  </BodyContainer>
-  
-);
-}
-  
-
+    </div>
+  );
+};
 
 export default Body;

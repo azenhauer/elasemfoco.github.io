@@ -1,45 +1,88 @@
 // HomeCard.jsx
 import styled from "styled-components";
 
+import React from "react";
+
+
 const HomeCardContainer = styled.div`
-  background-color: ${(props) => props.bgColor || "#ffffff"};
-  border-radius: var(--main-radius);
+ 
+
+  
+ 
+  margin-top: 5em;
+  margin-bottom: 5em;
+  background-color: ${(props) => props.color};
+  
+  padding-top: 2em;
+ 
+  gap: 3em;
+  padding-bottom: 4em;
+ 
   display: flex;
-  width: 100%;
-  align-items: center;
+  flex-wrap: wrap;
+  
   justify-content: center;
-  margin: 0 auto;
+
+  
+  position: relative;
 
   img {
-    width: 1080px;
-    height: 560px;
-    z-index: 2;
-    margin-top: 1em;
+    border-radius: var(--main-radius);
+    scroll-snap-align: center;
+   object-fit: cover;
+
+    
+    max-height: 560px;
+    
+   
+    
+     
+    
   }
 
-  h2 {
+  h3 {
+   
+    display: flex;
+   
+   
+    text-align: center;
+    
+    width: 70%;
+   
+    font-style: italic;
+    
+    flex-wrap: wrap;
+
     z-index: 1;
     color: #ebead4;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #ebead4;
+
     font-family: Inter;
-    font-size: 32px;
+    font-size: clamp(1rem, 3vw, 2rem);
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     line-height: normal;
-    margin-top: 7em;
-    margin-left: 5em;
-    margin-right: 5em;
+    
+   
+   
+    
   }
 `;
 
-function HomeCard({ title, image, bgColor }) {
+  function HomeCard({ image, title, color }) {
   return (
-    <HomeCardContainer bgColor={bgColor}>
-      <h2>{title}</h2>
-      <img src={image} />
+    <HomeCardContainer >
+      <div className=" flex justify-center items-center w-full ">
+      <h3 className="flex justify-center">{title}</h3>
+      </div>
+
+      <div className=" flex justify-center ">
+        
+      <img src={image} alt={title} />
+      
+      </div>
+      
     </HomeCardContainer>
   );
-}
+};
 
 export default HomeCard;
