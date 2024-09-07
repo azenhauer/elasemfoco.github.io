@@ -1,0 +1,162 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --main-radius: 20px;
+  }
+html{
+    
+   scroll-behavior: smooth;
+}
+body{
+   
+    overscroll-behavior: contain;
+    display: flex;
+    background-color: #0e0106;
+    font-family: 'Inter';
+    
+    
+  
+    
+}
+
+#root {
+
+  width: 100%;
+    
+    
+  }
+
+  @media (max-width: 900px) {
+    #bar{
+     
+    }
+    
+    #homebody-container{
+       height: max(420px, 70vh)
+
+    }
+    #homebody-container h2{
+
+      padding: 0px;
+    }
+    #nav{
+    
+      justify-content: end;
+      height: clamp(4em, 6vh, 6.5em);
+      
+    }
+    .nav-list{
+      visibility: hidden;
+      position: absolute;
+    }
+    .sidebar li{
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #000000;
+      background-image: radial-gradient(circle 325px at 19.2% 64.8%, rgba(254, 62, 101, 1) 9.7%, rgba(164, 24, 146, 1) 91.3%);
+      background-size: 100% 2px;
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+    }
+    .logo{
+      
+      visibility: visible;
+      position: relative;
+      max-width: 80%;
+      opacity: 0.7;
+    }
+    .main-bar{
+      width: 100%;
+    }
+    #menu{
+      display: block;
+    }
+    .menu-icons{
+      display: block;
+    }
+
+
+
+    
+  }
+  .nos{
+    text-align: center;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-text-stroke-width: 3px;
+    color: transparent;
+    -webkit-text-stroke-color: #860A35;
+    font-family: Inter;
+    font-size: clamp(6rem, 5vh, 13rem);
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing:clamp(16px,1vh,24.126px );
+    z-index: 20;
+
+  }
+  .nos-text{
+    color: #FFF;
+    word-spacing: -1px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    
+    text-align: justify;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #EBEAD4;
+    font-family: Inter;
+    font-size: clamp(1.25rem, 5vw, 1.8rem);
+    font-style: italic;
+    font-weight: 100;
+    line-height: 122.487%; /* 2.44975rem */
+  }
+  .elashidden-img {
+   
+    
+    height: auto;
+    max-height: 65vh; /* Limits height to 80% of the viewport height */
+    object-fit: contain; /* Ensures the image keeps its aspect ratio */
+}
+
+.achievements-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  justify-content: center;
+  gap: 10px;
+}
+
+.font-sizingh2{
+letter-spacing: 1px;
+font-size: clamp(1.10rem, 5vw, 2rem);}
+.font-sizingh3{
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 5vw, 1.7rem);}
+
+.grid-container{
+  display: grid;
+  grid-template-rows: repeat(autofit, minmax(1fr, 133px));
+  grid-template-columns: 1fr;
+}
+.grid-container img{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+
+
+.grid-container div{
+  grid-row-start: 1;
+  grid-column-start: 1;
+};
+
+   

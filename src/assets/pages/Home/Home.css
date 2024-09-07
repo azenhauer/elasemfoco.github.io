@@ -1,0 +1,70 @@
+.home-container {
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+
+h2 {
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -0.32px;
+}
+
+
+.conheça-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: transparent;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+
+.conheça-button::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 6px);
+  background-color: #4e1127;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+  z-index: -1;
+}
+
+.conheça-button:hover::before {
+  transform: scaleY(0);
+}
+
+.conheça-button::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 6px);
+  background-color: #860a35;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+  z-index: -1;
+}
+
+.conheça-button:hover::after {
+  transform: scaleX(0);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
