@@ -1,0 +1,90 @@
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --main-radius: 20px;
+  }
+html{
+    scroll-snap-type: y mandatory;
+   scroll-behavior: smooth;
+}
+body{
+   
+    overscroll-behavior: contain;
+    display: flex;
+    background-color: #0e0106;
+    font-family: 'Inter';
+    justify-content: center;
+  
+    
+}
+
+#root {
+
+  max-width: 100%;
+    
+    
+  }
+
+  @media (max-width: 900px) {
+    #bar{
+      padding-bottom: 5rem;
+    }
+    
+    #homebody-container{
+       height: max(420px, 70vh)
+
+    }
+    #homebody-container h2{
+
+      padding: 0px;
+    }
+    #nav{
+    
+      justify-content: end;
+      height: clamp(4em, 6vh, 6.5em);
+      
+    }
+    .nav-list{
+      visibility: hidden;
+      position: absolute;
+    }
+    .sidebar li{
+      display: flex;
+      justify-content: center;
+      
+      
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #000000;
+      background-image: radial-gradient(circle 325px at 19.2% 64.8%, rgba(254, 62, 101, 1) 9.7%, rgba(164, 24, 146, 1) 91.3%);
+      background-size: 100% 2px;
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+    }
+    .logo{
+      
+      visibility: visible;
+      position: relative;
+      max-width: 80%;
+      opacity: 0.7;
+    }
+    .main-bar{
+      width: 100%;
+    }
+    #menu{
+      display: block;
+    }
+    .menu-icons{
+      display: block;
+    }
+
+
+
+    
+  }
+  
+   
