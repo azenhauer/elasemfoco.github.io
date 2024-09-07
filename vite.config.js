@@ -11,4 +11,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react-router-dom'],
   },
+  build: {
+    rollupOptions: {
+      external: ['react-router-dom'],
+    },
+  },
 })
