@@ -28,7 +28,7 @@ const HomeCardContainer = styled.div`
 
   img {
     border-radius: var(--main-radius);
-    scroll-snap-align: center;
+    
    object-fit: cover;
 
     

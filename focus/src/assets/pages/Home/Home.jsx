@@ -4,7 +4,7 @@ import Body from "./Body.jsx";
 import BgImage from "./HomeImages/background.png";
 import "./Home.css";
 import { Link } from "react-router-dom";
-
+import Footer from "../../Components/Footer.jsx";
 
 
 
@@ -51,6 +51,7 @@ function Home() {
                       </div>
         
       <Body></Body>
+      <Footer></Footer>
     </div>
   
 

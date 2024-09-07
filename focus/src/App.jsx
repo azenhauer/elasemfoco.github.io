@@ -1,8 +1,8 @@
 
-
-import Apresentações from  './assets/pages/Apresentações'
-import Mídias from  './assets/pages/Mídias'
-import Sobre from  './assets/pages/Sobre'
+import React from 'react'
+import Apresentações from  './assets/pages/Apresentações/Apresentações.jsx'
+import Mídias from  './assets/pages/Midias/Mídias.jsx'
+import Sobre from  './assets/pages/Sobre/Sobre.jsx'
 import Home from  './assets/pages/Home/Home.jsx'
 import { Route, Routes } from 'react-router-dom'
 

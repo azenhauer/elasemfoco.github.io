@@ -13,8 +13,8 @@ function NavBar() {
     };
 
     return (
-        <div id="bar" className="flex max-w-full justify-center snap-start flex-wrap">
-            <div className="h-2 bg-pink-900 z-[9999] w-full"></div>
+        <div id="bar" className="flex w-full justify-center  flex-wrap">
+            <div className="h-2 bg-pink-950 z-[9999] w-full"></div>
             
             <nav id="nav" className="flex w-full justify-center mb-4">
                 <div className="menu-icons">

@@ -7,7 +7,7 @@
     --main-radius: 20px;
   }
 html{
-    scroll-snap-type: y mandatory;
+    
    scroll-behavior: smooth;
 }
 body{
@@ -16,21 +16,22 @@ body{
     display: flex;
     background-color: #0e0106;
     font-family: 'Inter';
-    justify-content: center;
+    
+    
   
     
 }
 
 #root {
 
-  max-width: 100%;
+  width: 100%;
     
     
   }
 
   @media (max-width: 900px) {
     #bar{
-      padding-bottom: 5rem;
+     
     }
     
     #homebody-container{
@@ -86,5 +87,76 @@ body{
 
     
   }
-  
+  .nos{
+    text-align: center;
+    
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-text-stroke-width: 3px;
+    color: transparent;
+    -webkit-text-stroke-color: #860A35;
+    font-family: Inter;
+    font-size: clamp(6rem, 5vh, 13rem);
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing:clamp(16px,1vh,24.126px );
+    z-index: 20;
+
+  }
+  .nos-text{
+    color: #FFF;
+    word-spacing: -1px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    
+    text-align: justify;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #EBEAD4;
+    font-family: Inter;
+    font-size: clamp(1.25rem, 5vw, 1.8rem);
+    font-style: italic;
+    font-weight: 100;
+    line-height: 122.487%; /* 2.44975rem */
+  }
+  .elashidden-img {
+   
+    
+    height: auto;
+    max-height: 65vh; /* Limits height to 80% of the viewport height */
+    object-fit: contain; /* Ensures the image keeps its aspect ratio */
+}
+
+.achievements-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  justify-content: center;
+  gap: 10px;
+}
+
+.font-sizingh2{
+letter-spacing: 1px;
+font-size: clamp(1.10rem, 5vw, 2rem);}
+.font-sizingh3{
+  letter-spacing: 1px;
+  font-size: clamp(1rem, 5vw, 1.7rem);}
+
+.grid-container{
+  display: grid;
+  grid-template-rows: repeat(autofit, minmax(1fr, 133px));
+  grid-template-columns: 1fr;
+}
+.grid-container img{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+
+
+.grid-container div{
+  grid-row-start: 1;
+  grid-column-start: 1;
+};
+
    

@@ -9,7 +9,7 @@ import ImgHp3 from './HomeImages/homepg-img3.png';
 const Body = () => {
   return (
     
-    <div id="homebody-container" className='max-w-full '>
+    <div id="cards-container" className='max-w-full '>
       
 
 
