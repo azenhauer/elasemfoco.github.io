@@ -9,4 +9,7 @@ export default defineConfig({
       external: [],
     }
   }
+  optimizeDeps: {
+    include: ['react-router-dom']
+  }
 })
