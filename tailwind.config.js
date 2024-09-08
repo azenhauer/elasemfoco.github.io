@@ -1,20 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./focus/src/**/*.{js,jsx,ts,tsx,css}",
-    "./src/**/*.{js,jsx,ts,tsx,html,css}",
-    
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       transitionDuration: {
         '2500': '2500ms',
-      },
-      colors: {
-        'primary': '#110202', 
-      },
-      fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
       },
     },
   },
